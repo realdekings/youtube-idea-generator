@@ -32,11 +32,22 @@ import pandas as pd
 # # print(df)
 
 
+import os
+from dotenv import load_dotenv
+# from os import environ
+
+
+load_dotenv()
+
+# YouTube Data API setup
+ 
+
+
 from googleapiclient.discovery import build
 import pandas as pd
 
 # YouTube Data API setup
-API_KEY = "AIzaSyDALqG4-9uBXYHq4Ckgd1vRVG0WCyK_QEs"  # Replace with your YouTube Data API key
+API_KEY = os.getenv("API_KEY")  # Replace with your YouTube Data API key
 youtube = build('youtube', 'v3', developerKey=API_KEY)
 
 def search_youtube_videos(search_term, max_results=20):

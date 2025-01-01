@@ -1,8 +1,3 @@
 .github
 .env
-.loaddata.py
-.exchangerate.csv
-.analytics_data_analysis_videos_detailed.csv
-.analysis_youtube_videos_detailed.csv
-.tableau_tableau_videos_detailed.csv
-.powerbi_videos_detailed.csv
+*.csv
