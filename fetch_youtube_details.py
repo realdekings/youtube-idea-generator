@@ -86,7 +86,7 @@ def fetch_video_details(video_ids):
     return details_df
 
 # Search YouTube and retrieve basic video details
-search_term = "tableau"  # Replace with your search term
+search_term = "ai agents"  # Replace with your search term
 max_results = 20  # Adjust the number of results
 basic_df = search_youtube_videos(search_term, max_results)
 
@@ -98,8 +98,8 @@ details_df = fetch_video_details(video_ids)
 final_df = pd.merge(basic_df, details_df, on="Video ID")
 
 # Save the final results to a CSV file
-csv_file = f"{search_term}_tableau_videos_detailed.csv"
-final_df.to_csv(csv_file, index=False)
+# csv_file = f"{search_term}_tableau_videos_detailed.csv"
+# final_df.to_csv(csv_file, index=False)
 
-print(f"Detailed data saved to {csv_file}")
+# print(f"Detailed data saved to {csv_file}")
 print(final_df.head())
