@@ -86,7 +86,7 @@ def fetch_video_details(video_ids):
     return details_df
 
 # Search YouTube and retrieve basic video details
-search_term = "ai agents"  # Replace with your search term
+search_term = "Excel AI"  # Replace with your search term
 max_results = 20  # Adjust the number of results
 basic_df = search_youtube_videos(search_term, max_results)
 
